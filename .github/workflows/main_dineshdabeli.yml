@@ -2,9 +2,6 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-# name: Build and deploy Python app to Azure Web App - DineshDabeli
-
-
 name: Build and deploy Python app to Azure Web App - DineshDabeli
 
 on:
@@ -32,7 +29,7 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-      
+
       - name: Install dependencies
         run: |
           source venv/bin/activate
