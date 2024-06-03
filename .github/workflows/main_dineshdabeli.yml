@@ -1,4 +1,4 @@
-name: Build and deploy Python app to Azure Web App - DineshDabeli
+# name: Build and deploy Python app to Azure Web App - DineshDabeli
 
 on:
   push:
