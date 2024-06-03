@@ -1,4 +1,4 @@
-# name: Build and deploy Python app to Azure Web App - DineshDabeli
+name: Build and deploy Python app to Azure Web App - DineshDabeli
 
 on:
   push:
@@ -25,6 +25,11 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
+
+      - name: Install distutils in the virtual environment
+        run: |
+          source venv/bin/activate
+          pip install distutils
 
       - name: Install dependencies
         run: |
