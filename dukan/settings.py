@@ -53,7 +53,7 @@ AUTHENTICATION_BACKENDS = [
 
 # settings.py
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 INSTALLED_APPS = [
@@ -153,5 +153,7 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
+# Media files (uploads)
+MEDIA_URL = 'static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
 
